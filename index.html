@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Weather App</title>
+</head>
+
+<body>
+    <div class="container">
+        <header class="header">
+        </header>
+        <div class="options">
+            <ul class="options-wrapper">
+                <li class="options-home" data-options-target="#home">Home</li>
+                <li class="options-settings" data-options-target="#settings">Settings</li>
+            </ul>
+        </div>
+        <div class="content">
+            <div class="left-block">
+                <div class="weather-info active" id="home" data-content-target>
+                    <div class="search-term">
+                        <input type="text" class="search-city" placeholder="Podaj nazwę miasta" data-input="home">
+                        <button class="search-btn" data-search-btn="home-btn">
+                            <i class="fas fa-search"></i>
+                        </button>
+                    </div>
+
+                    <div class="city">
+                        <div class="left-arrow arrow">
+                            <i class="fas fa-chevron-left"></i>
+                        </div>
+                        <h2 class="your-city">Find city..</h2>
+                        <div class="right-arrow arrow">
+                            <i class="fas fa-chevron-right"></i>
+                        </div>
+                        <div class="star add-favourite"></div>
+                    </div>
+
+                    <div class="weather-details">
+                        <div class="temp-details">
+                            <p class="current-day">Day of week</p>
+                            <p class="current-temp">0</p>
+                            <span class="celcius">&#176;</span>
+                        </div>
+                        <div class="weahter-icon">
+                            <div class="weatherType-icon">
+                                <img src="" alt="" class="imgIcon">
+                            </div>
+                            <!-- <i class="fas fa-cloud-sun-rain"></i> -->
+                        </div>
+                    </div>
+                    <div class="long-forecast">
+                        <div class="long-forecast-details">
+                            <div class="long-forecast-day">
+                                <p>Sunday</p>
+                            </div>
+                            <div class="long-forecast-temp">
+                                <p>16 &#176; <i class="fas fa-cloud-sun-rain"></i></p>
+                            </div>
+                        </div>
+                        <div class="long-forecast-details">
+                            <div class="long-forecast-day">
+                                <p>Sunday</p>
+                            </div>
+                            <div class="long-forecast-temp">
+                                <p>16 &#176; <i class="fas fa-cloud-sun-rain"></i></p>
+                            </div>
+                        </div>
+                        <div class="long-forecast-details">
+                            <div class="long-forecast-day">
+                                <p>Sunday</p>
+                            </div>
+                            <div class="long-forecast-temp">
+                                <p>16 &#176; <i class="fas fa-cloud-sun-rain"></i></p>
+                            </div>
+                        </div>
+                        <div class="long-forecast-details">
+                            <div class="long-forecast-day">
+                                <p>Sunday</p>
+                            </div>
+                            <div class="long-forecast-temp">
+                                <p>16 &#176; <i class="fas fa-cloud-sun-rain"></i></p>
+                            </div>
+                        </div>
+                        <div class="long-forecast-details">
+                            <div class="long-forecast-day">
+                                <p>Sunday</p>
+                            </div>
+                            <div class="long-forecast-temp">
+                                <p>16 &#176; <i class="fas fa-cloud-sun-rain"></i></p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="settings" id="settings" data-content-target>
+                    <div class="search-term">
+                        <input type="text" class="search-city" placeholder="Podaj nazwę miasta" data-input="settings">
+                        <button class="search-btn" data-search-btn="settings-btn">
+                            <i class="fas fa-search"></i>
+                        </button>
+                    </div>
+
+                    <div class="searching-city-options">
+                        <p class="currentCity">Find city..</p>
+                        <p class="currentCityTemp"></p>
+                        <span class="celcius" style="margin-right: 15px;">&#176;</span>
+                        <div class="weather-icon weatherType-icon">
+                            <img src="" alt="" class="settings-icon">
+                        </div>
+                        <div class="addBtn">
+                            <button>Add</button>
+                        </div>
+                    </div>
+                    <h3 class="places-title">Places</h3>
+                    <div class="places">
+                    </div>
+
+                    <div class="apps">
+                        <h3>Apps</h3>
+                        <div class="countryInfo appsWrapper">
+                            <p>Country Info</p>
+                            <!-- Rounded switch -->
+                            <label class="switch">
+                                <input type="checkbox">
+                                <span class="slider round"></span>
+                            </label>
+                        </div>
+                        <div class="exchangeMoney appsWrapper">
+                            <p>Exchange money</p>
+                            <!-- Rounded switch -->
+                            <label class="switch">
+                                <input type="checkbox">
+                                <span class="slider round"></span>
+                            </label>
+                        </div>
+                        <div class="bookFlight appsWrapper">
+                            <p>Book a flight</p>
+                            <!-- Rounded switch -->
+                            <label class="switch">
+                                <input type="checkbox">
+                                <span class="slider round"></span>
+                            </label>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+            <!-- right block  -->
+            <div class="right-block">
+                <div class="country-info">Country Info</div>
+                <div class="exchange-money">Exchange Money</div>
+                <div class="flight-book">Flight Book</div>
+            </div>
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+    <script src="ls-wrapper.js"></script>
+    <script src="https://kit.fontawesome.com/ebf4c0e89c.js"></script>
+</body>
+
+</html>
